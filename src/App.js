@@ -1,6 +1,9 @@
 import React from "react";
 import "./App.css";
 import Header from "./Header";
+import Sidebar from "./Sidebar";
+import Body from "./Body";
+import { menu } from "./Menu";
 
 function App() {
   return (
@@ -9,7 +12,10 @@ function App() {
         <Header />
       </div>
 
-      <div className="app__body"></div>
+      <div className="app__body">
+        <Sidebar menu={menu} />
+        <Body menu={menu} />
+      </div>
     </div>
   );
 }

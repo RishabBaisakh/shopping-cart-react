@@ -4,5 +4,6 @@
 }
 
 .app__body {
-  height: 85vh;
+  display: flex;
+  padding: 50px;
 }

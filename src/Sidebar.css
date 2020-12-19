@@ -1,0 +1,13 @@
+.sidebar {
+  flex: 0.2;
+  height: 100%;
+}
+
+.sidebar > h3 {
+  margin-left: 7px;
+  margin-bottom: 10px;
+}
+
+.sidebar__body {
+  overflow-y: overlay;
+}

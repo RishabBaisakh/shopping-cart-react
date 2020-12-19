@@ -1,0 +1,12 @@
+.sidebarOption {
+  padding: 12px 7px;
+  cursor: pointer;
+}
+
+.sidebarOption:hover {
+  background-color: lavenderblush;
+}
+
+.sidebarOption > h4 {
+  font-size: 20px;
+}
