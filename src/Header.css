@@ -1,0 +1,39 @@
+.header {
+  margin: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__left > h3 {
+  color: white;
+  font-size: 30px;
+}
+
+.header__left > .MuiSvgIcon-root {
+  margin-left: 10px;
+  font-size: 50px;
+  color: white;
+}
+
+.header__right > .MuiSvgIcon-root {
+  color: white;
+}
+
+.header__rightCartItems {
+  background-color: crimson;
+  padding: 1px;
+  border-radius: 999px;
+}
+
+.header__rightCartItems > p {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}

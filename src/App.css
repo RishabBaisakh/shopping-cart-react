@@ -1,0 +1,8 @@
+.app__header {
+  height: 15vh;
+  background-color: coral;
+}
+
+.app__body {
+  height: 85vh;
+}
