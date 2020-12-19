@@ -2,7 +2,7 @@ import React from "react";
 import SidebarOption from "./SidebarOption";
 import "./Sidebar.css";
 
-function Sidebar({ menu, setSelection }) {
+function Sidebar({ menu }) {
   return (
     <div className="sidebar">
       <h3>Menu</h3>

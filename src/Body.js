@@ -1,22 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Body.css";
 import { useDataLayerValue } from "./DataLayer";
+import MenuItem from "./MenuItem";
 
 function Body({ menu }) {
   const [{ currentSelection }, dispatch] = useDataLayerValue();
+  const [menuItems, setMenuItems] = useState([]);
 
   useEffect(() => {
-    console.log(currentSelection);
-  }, [currentSelection]);
+    setMenuItems(
+      menu?.reduce(
+        (prev, curr) => (
+          curr.category === currentSelection && prev.push(curr.items), prev
+        ),
+        []
+      )
+    );
 
-  console.log(menu);
+    console.log(menuItems[0]);
+  }, [currentSelection]);
 
   return (
     <div className="body">
       {currentSelection ? (
-        <div className="body__itemCard">
-          <h1>{currentSelection}</h1>
-        </div>
+        menuItems[0]?.map((menuItem, index) => (
+          <MenuItem key={index} {...menuItem} />
+        ))
       ) : (
         <h1>Please choose a category from the side menu.</h1>
       )}
