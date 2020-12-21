@@ -1,0 +1,26 @@
+.menuItem {
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 3px rgb(175, 174, 174);
+  padding: 10px;
+}
+
+.menuItem__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuItem__addButton {
+  margin-top: 50px;
+  background-color: rgb(224, 228, 233);
+  width: fit-content;
+  cursor: pointer;
+}
+
+.menuItem__addButton > p {
+  padding: 10px;
+}
+
+.menuItem__addButton > p:hover {
+  background-color: rgb(211, 216, 221);
+}

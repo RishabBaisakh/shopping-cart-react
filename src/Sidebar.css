@@ -5,7 +5,11 @@
 
 .sidebar > h3 {
   margin-left: 7px;
-  margin-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  box-shadow: 0 2px 3px black;
 }
 
 .sidebar__body {

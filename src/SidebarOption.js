@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./SidebarOption.css";
 import { useDataLayerValue } from "./DataLayer";
 
-function SidebarOption({ name, handleClick }) {
+function SidebarOption({ name }) {
   const [hover, setHover] = useState(false);
   const [{ currentSelection }, dispatch] = useDataLayerValue();
 

@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.header > a {
+  text-decoration: none;
+}
+
 .header__left > h3 {
   color: white;
   font-size: 30px;

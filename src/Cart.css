@@ -1,0 +1,42 @@
+.cart {
+  display: flex;
+  width: 100%;
+}
+
+.cart__left {
+  flex: 0.7;
+}
+
+.cart__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 2px gray;
+}
+
+.cart__item > p {
+  margin-right: 20px;
+}
+
+.cart__right {
+  flex: 0.3;
+  padding: 20px;
+}
+
+.cart__rightTotal {
+  padding: 20px;
+  border: 1px solid lightgrey;
+  text-align: center;
+}
+
+.cart__rightCheckoutButton {
+  margin-top: 50px;
+  padding: 10px;
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
+}
+
+.cart__rightCheckoutButton:hover {
+  background-color: lightgrey;
+}

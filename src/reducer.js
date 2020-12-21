@@ -1,6 +1,7 @@
 export const initialState = {
   name: null,
   currentSelection: null,
+  cartItems: [],
 };
 
 const reducer = (state, action) => {
@@ -14,6 +15,11 @@ const reducer = (state, action) => {
       return {
         ...state,
         currentSelection: action.currentSelection,
+      };
+    case "ADD_TO_CART":
+      return {
+        ...state,
+        cartItems: action.cartItems,
       };
     default:
       return state;

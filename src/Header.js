@@ -2,21 +2,36 @@ import React from "react";
 import "./Header.css";
 import FastfoodIcon from "@material-ui/icons/Fastfood";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import RemoveShoppingCartIcon from "@material-ui/icons/RemoveShoppingCart";
+import { useDataLayerValue } from "./DataLayer";
+import { Link } from "react-router-dom";
 
 function Header() {
+  const [{ cartItems }, dispatch] = useDataLayerValue();
+
   return (
     <div className="header">
-      <div className="header__left">
-        <FastfoodIcon />
-        <h3>Food It Be</h3>
-      </div>
-
-      <div className="header__right">
-        <div className="header__rightCartItems">
-          <p>!</p>
+      <Link to="/">
+        <div className="header__left">
+          <FastfoodIcon />
+          <h3>Food It Be</h3>
         </div>
-        <ShoppingCartIcon />
-      </div>
+      </Link>
+
+      <Link to="/cart">
+        <div className="header__right">
+          {cartItems.length ? (
+            <>
+              <div className="header__rightCartItems">
+                <p>{cartItems.length}</p>
+              </div>
+              <ShoppingCartIcon />
+            </>
+          ) : (
+            <RemoveShoppingCartIcon />
+          )}
+        </div>
+      </Link>
     </div>
   );
 }

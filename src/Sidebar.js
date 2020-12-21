@@ -1,8 +1,9 @@
 import React from "react";
 import SidebarOption from "./SidebarOption";
 import "./Sidebar.css";
+import { menu } from "./Menu";
 
-function Sidebar({ menu }) {
+function Sidebar() {
   return (
     <div className="sidebar">
       <h3>Menu</h3>
